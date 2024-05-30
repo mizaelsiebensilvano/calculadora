@@ -2,25 +2,88 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.circulos {
+    display: flex;
+}
+
+.circ-verm {
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgb(235, 7, 7);
+    border-radius: 50%;
+    margin-bottom: 20px;
+    background-color: rgb(235, 7, 7);
+    margin-right: 10px;
+}
+
+.circ-amar {
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgb(255, 255, 0);
+    border-radius: 50%;
+    margin-bottom: 20px;
+    background-color: rgb(255, 255, 0);
+    margin-right: 10px;
+}
+
+.circ-verd {
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgb(33, 249, 33);
+    border-radius: 50%;
+    margin-bottom: 20px;
+    background-color: rgb(33, 249, 33);
+    margin-right: 10px;
+    margin-right: 10px;
+}
+
+
 #calculadora-app {
-    width: 600px;
+    width: 400px;
     margin: auto;
     padding: 10px;
+    border: 3px solid black;
+    border-radius: 15px;
+    background-color: rgb(68, 60, 60);
 }
 
 .resultado {
-    border: 1px solid black;
-    width: 400px;
+    font-size: 30px;
+    color: white;
+    outline: 1px solid rgb(68, 60, 60);
+    background-color: rgb(68, 60, 60);
+    width: 100%;
     height: 50px;
+    line-height: 70px;
     text-align: right;
+    border-radius: 5px;
+}
+
+.c {
+    background-color: rgb(96, 94, 94);
+    color: white; 
+}
+
+.x {
+    background-color: rgb(233, 198, 0);
+    color: white; 
 }
 
 .btn {
     display: grid;
-
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 70px 70px 70px 70px 70px;
 }
 
 button {
-    width: 50px;
-    height: 50px;
+    border: 2px solid gray;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0px;
+    background-color: rgb(161, 159, 159); 
+    color: white;
+}
+
+#zr {
+    grid-column: 1 / span 2;
 }
