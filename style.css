@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#calculadora-app {
+    width: 600px;
+    margin: auto;
+    padding: 10px;
+}
+
+.resultado {
+    border: 1px solid black;
+    width: 400px;
+    height: 50px;
+    text-align: right;
+}
+
+.btn {
+    display: grid;
+
+}
+
+button {
+    width: 50px;
+    height: 50px;
+}
