@@ -8,22 +8,7 @@ buttons.forEach(function(button){
     })
 })
 
-// while {
-// button.addEventListener('keypress', function(event) {
+document.addEventListener("keypress", function(event) {
 
-//     if(event.key) {
-//         console.log(e.target.textContent)
-//     }
-// })
-// }
-
-
-// document.addEventListener("keypress", function(event) {
-
-//     if(event.key === "1") {
-//         console.log("Pressionou a tecla 1")
-//     }
-
-// })
-
-    
+        console.log(event.key)
+})
