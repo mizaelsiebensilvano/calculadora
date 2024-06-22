@@ -59,12 +59,15 @@ body {
     border-radius: 5px;
 }
 
-#resultado {
+#visor {
     width: 100%;
     height: 50px;
-    background-color: rgb(68, 60, 60);
+    font-size: 40px;
+    color: white;
+    background-color: rgb(146, 128, 128);
     border-radius: 15px;
-    align-items: top;
+    text-align: right;
+    align-content: center;
     text-decoration: none;
 }
 
