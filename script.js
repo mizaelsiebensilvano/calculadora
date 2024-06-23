@@ -25,8 +25,9 @@ const atualizarDisplay = valor => display.innerHTML = valor
 
 const obtemValorDisplay = () => display.innerHTML
 
-const validarDisplay = tecla => {if(tecla === "C"){atualizarDisplay(" ")
-        return  
+const validarDisplay = tecla => {
+    if(tecla === "C"){atualizarDisplay('')
+        return
     }
 
     let valorSemPontuacao = removerPontuacao(obtemValorDisplay())
