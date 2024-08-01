@@ -21,7 +21,7 @@ const display = document.querySelector('.resultado')
 const operadores = document.querySelectorAll('operador')
 
 const removerPontuacao = valorString => {
-    return valorString.replaceAll(',', '.') .replace(',', '.')
+    return valorString.replaceAll(',', '') .replace(',', '.') * 1
     } 
 
 const atualizarDisplay = valor => display.innerHTML = valor
@@ -37,15 +37,16 @@ const validarDisplay = tecla => {
 
     if(tecla === '+/-' && obtemValorDisplay() !== '0'){
         atualizarDisplay(formatarNumero(valorSemPontuacao * -1))
+        return
     }
 
     if(tecla == ',' && obtemValorDisplay().indexOf(',') >= 0) {
-        atualizarDisplay('2')
+        return
     }
 
-    if(tecla === ',' && obtemValorDisplay() === '.') {
-        atualizarDisplay('0' + ',')
-        console.log('obtemValor')
+    if(tecla === ',' && obtemValorDisplay() === '') {
+        atualizarDisplay('0,')
+        return
     }
 
     if(tecla > 0 || tecla === '0' || tecla === ','){
